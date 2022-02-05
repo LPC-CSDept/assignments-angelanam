@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 int main ()
 {
     cout << "We have made a long journey of 4276 miles. /n";
