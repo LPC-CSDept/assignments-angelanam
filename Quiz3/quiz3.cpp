@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib> //standard library
-#include <ctime> //
-#include <iomanip> //
+#include <ctime> //time library
+#include <iomanip> //input output manipulator
 using namespace std;
 
 int main ()
