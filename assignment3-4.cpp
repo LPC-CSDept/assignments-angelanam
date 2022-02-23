@@ -10,19 +10,19 @@ int main ()
     cout << "Enter the first month: ";
     cin >> month1;
 
-    cout << "Enter the rainfall for " << month1 << " :";
+    cout << "Enter rainfall amount for " << month1 << " :";
     cin >> rain1;
 
     cout << "Enter the second month: ";
     cin >> month2;
 
-    cout << "Enter the rainfall for " << month2 << " :";
+    cout << "Enter rainfall amount for " << month2 << " :";
     cin >> rain2;
 
     cout << "Enter the third month: ";
     cin >> month3;
 
-    cout << "Enter the rainfall for " << month3 << " :";
+    cout << "Enter rainfall amount for " << month3 << " :";
     cin >> rain3;
 
     double average = (rain1 + rain2 + rain3) / 3.0;
