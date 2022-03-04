@@ -70,12 +70,12 @@ int main()
 		case 3: //choice #3
 			float height, base;
 
-			cout << "What is the base?";
+			cout << "What is the base?" << endl;
 			cin >> base;
 
 			if (base > 0)
 			{
-				cout << "What is the height?";
+				cout << "What is the height?" << endl;
 				cin >> height;
 
 				if (height > 0) //calculates & prints area, multiplying base by height, then by 0.5
