@@ -21,7 +21,7 @@ int main()
         cout << "What is the distance?" << endl;
         cin >> distance;
 
-        if (distance < mindistance or distance > maxdistance) //will calculate total amount if distance is between 10-3000mi
+        if (distance < mindistance || distance > maxdistance) //will calculate total amount if distance is between 10-3000mi
         {
             cout << "Distance must be between 10 and 3,000 miles,\n"
             << "Please try again." << endl;
@@ -30,11 +30,11 @@ int main()
         {
             if (package <= 2)
             totalCharge = (distance / 500.00) * 1.10; //rate = $1.10 if package is/less than 2kg
-            else if (package > 2 & package <= 6)
+            else if (package > 2 && package <= 6)
             totalCharge = (distance / 500.00) * 2.20; //rate = $2.20 if package is more than 2 & is/less than 6kg
-            else if (package > 6 & package <= 10)
+            else if (package > 6 && package <= 10)
             totalCharge = (distance / 500.00) * 3.70; //rate = $3.70 if package is more than 6 & is/less than 10kg
-            else if (package > 10 & package <= 20)
+            else if (package > 10 && package <= 20)
             totalCharge = (distance / 500.00) * 4.80; //rate = $4.80 if package is more than 10 & is/less than 20kg
             
             cout << setprecision(2) << fixed; //using setprecision to show proper cash amount
