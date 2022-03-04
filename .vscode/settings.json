@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.cpp": "git-commit",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ostream": "cpp"
     }
 }
