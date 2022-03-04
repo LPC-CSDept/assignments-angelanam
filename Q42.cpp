@@ -11,7 +11,7 @@ int main()
     cout << "What is the weight of the package?" << endl;
     cin >> package;
 
-    if (package <= minweight or package > maxweight) //will ask for distance if package is between 1-20kg
+    if (package <= minweight || package > maxweight) //will ask for distance if package is between 1-20kg
     {
         cout << "Package must weigh less than 20kg and more than 0kg,\n"
         << "Please try again." << endl;
