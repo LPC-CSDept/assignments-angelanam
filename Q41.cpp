@@ -18,7 +18,7 @@ int main()
 	cout << " Enter your choice (1-4): ";
 	cin >> choice; //input answer between 1-4
 
-	switch (choice)
+	switch (choice) //displays following case questions based on choice
 	{
 		float area;
 
