@@ -11,11 +11,12 @@ int main()
     
     srand(time(0));
 
-	for(int i=0;i<N;i++){
-		rdnum = rand() % 100 ;	
-		cout << rdnum << "\t"; 
+	for(int i=0;i<N;i++)
+    {
+		rdnum = rand() % 100;	
+		cout << rdnum << "\t";
 		if ((i==0) || ( min > rdnum))
 			min = rdnum;
 	}
-	cout << "The minimum number is: " << min << endl;
+	cout << "The minimum value: " << min << endl;
 }
