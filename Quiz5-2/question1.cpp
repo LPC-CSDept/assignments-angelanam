@@ -18,5 +18,5 @@ int main()
 		if ((i==0) || ( min > rdnum))
 			min = rdnum;
 	}
-	cout << "The minimum value: " << min << endl;
+	cout << "The minimum value is: " << min << endl;
 }
