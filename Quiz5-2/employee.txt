@@ -1,0 +1,4 @@
+3
+23 Angela technician 65000
+12 Robert engineering 90000
+2 Ralph wiring 30000

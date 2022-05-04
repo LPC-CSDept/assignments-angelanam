@@ -8,7 +8,7 @@ int main()
     ofstream ofs; //output to write file employee.txt
     int id, num; //employee ID & # of employees
     string name, dept; //employee name & their department
-    double salary; //salary is doubled since will be divided
+    double salary; //salary is double since will be divided to find average
 
     ofs.open("employee.txt");
     if (!ofs)
