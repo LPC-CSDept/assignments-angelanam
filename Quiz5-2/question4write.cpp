@@ -5,10 +5,10 @@ using namespace std;
 
 int main()
 {
-    ofstream ofs; //
-    int id;
-    string name, dept;
-    double num, salary;
+    ofstream ofs; //output to write file employee.txt
+    int id, num; //employee ID & # of employees
+    string name, dept; //employee name & their department
+    double salary; //salary is doubled since will be divided
 
     ofs.open("employee.txt");
     if (!ofs)
