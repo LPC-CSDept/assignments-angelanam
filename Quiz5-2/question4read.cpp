@@ -1,3 +1,4 @@
+#include <iostream>
 #include <fstream>
 using namespace std;
 
@@ -17,6 +18,7 @@ int main()
     }
 
     ifs >> num;
+    
     cout << "ID:\t" << "Name:\n" << "Department:\t" 
     << "Salary\t" << endl;
 
@@ -26,8 +28,8 @@ int main()
         ifs >> id >> name >> dept >> salary;
         sum += salary; 
         //adds all salaries based on # of employees
-        cout << id << "\t" << name << "\t" << dept "\t" 
-        << salary << "\t" endl;
+        cout << id << "\t" << name << "\t" << dept << "\t" 
+        << salary << "\t" << endl;
     }
 
     avg = sum / num;
