@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int begin, end, result;
+    int begin, end, flag;
 
     cout << "Enter lower prime number: ";
     cin >> begin;
@@ -13,15 +13,24 @@ int main()
     cout << "The prime numbers between " << begin <<
     " and " << end << " are: ";
 
-    for (begin; begin<=end; begin++){
+    for (int begin; begin<=end; begin++){
         if (begin == 1 || begin == 0)
-        result = 1;
+        //prime number can't be 0 or 1
+        continue;
+        //using this to go to next iteration
+        flag = 1;
 
         for (int i=2; i<=begin/2; ++i){
+        //nested loop, creates loop to print 2 to upper prime #
             if (begin % i == 0){
-                result = 0;
+                flag = 0;
+                break;
             }
 
         }
+        if (flag == 1)
+        //prints prime #s in order of low to high
+        cout << begin << " ";
     }
+    return 0;
 }
