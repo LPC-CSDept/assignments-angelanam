@@ -29,5 +29,10 @@ void printResult(int n1, int n2, int n3, int min)
 
 int main ()
 {
-    
+    int n1, n2, n3, min;
+    genRandnum(n1,n2,n3);
+    findMin(n1, n2, n3);
+    printResult(n1, n2, n3, min);
+
+    return 0;
 }
