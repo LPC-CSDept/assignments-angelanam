@@ -22,8 +22,15 @@ int main()
     cout << "Name:\t" << "Score 1:\n" << "Score2:\t" 
     << endl;
 
-    sum = 0;
+    avg80 = 0;
     for (int i=0; i<num; i++){
+        ifs >> name >> score1 >> score2;
+        sum = score1 + score2; 
+        avg = sum / 2;
 
+        cout << name << "\t" << score1 << "\t" 
+        << score2 << "\t" << endl;
+        cout << "Sum:\t" << sum << "\t" <<
+        "Average:\t" << avg << endl;
     }
 }
