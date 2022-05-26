@@ -21,6 +21,26 @@ int main()
     };
     //grade structure made to input name, ssn, score
 
-Grade g;
+    Grade g;
+    int count = 1;
+
+    ifstream ifs("grades.txt");
+    //opening file to read
+    ofstream ofs("grades");
+    //opening binary file to write
+
+    if (!ofs){
+    //will display message if there's error in bin file
+        cerr << "Error opening grades.bin\n";
+        exit(0);
+    }
+
+    if (!ifs){
+    //will display message if there's error in txt file
+        cout << "Error opening grades.txt\n";
+        exit(0);
+    }
+
+
 
 }
