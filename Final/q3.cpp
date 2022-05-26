@@ -14,12 +14,17 @@ bool Subset(int numbers1[], int numbers2[], int x, int y)
     //using while loop to iterate until program ends
         if (numbers1[j] > numbers2[i])
         i++;
-        //if value of numbers2 is less than numbers1, it will go into first array
+        //if value of j in numbers2 is less than value i in numbers1, it will go into first array
 
         else if (numbers1[j] == numbers2[i]){
-        //if both are equal then increments i & j
+        //if both are equal then will increase by amounts of i & j
             j++;
             i++;
+        }
+
+        else if (numbers1[j] < numbers2[i]){
+        //if value of j in numbers1 is less than i value in numbers2, will break
+            return 0;
         }
     }
 }
