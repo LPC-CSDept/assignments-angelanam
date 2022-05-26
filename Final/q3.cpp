@@ -2,7 +2,7 @@
 using namespace std;
 
 bool Subset(int numbers1[], int numbers2[], int x, int y)
-//using bool function to check if int numbers1 & numbers2 is a subset
+//using function to check if int numbers1 & numbers2 is a subset
 {
     int i=0, j=0;
     //using two ints equal to 0 to test smaller/bigger number
@@ -22,11 +22,13 @@ bool Subset(int numbers1[], int numbers2[], int x, int y)
             i++;
         }
 
-        else if (numbers1[j] < numbers2[i]){
+        else if (numbers1[j] < numbers2[i])
         //if value of j in numbers1 is less than i value in numbers2, will break
             return 0;
-        }
     }
+    
+    return (j<x)? true: false;
+    //using this return value for bool to declare a true or false statement
 }
 int main()
 //in main re-call the values & print result of whether they are a subset or not
@@ -37,9 +39,11 @@ int main()
     int numbers2[SIZE2] = {1, 2, 3, 5, 9, 10, 11, 13, 15, 17};
 
     if (Subset (numbers1, numbers2, SIZE1, SIZE2)){
+    //if the values are a subset, will print result
         cout << "The two arrays are a subset";
     }
     else{
+    //will print this if they are not a subset
         cout << "The two arrays are not a subset";
     }
      return 0;
