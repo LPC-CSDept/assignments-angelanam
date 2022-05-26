@@ -26,7 +26,7 @@ int main()
 
     ifstream ifs("grades.txt");
     //opening file to read
-    ofstream ofs("grades");
+    ofstream ofs("grades.bin", ios::out | ios::binary);
     //opening binary file to write
 
     if (!ofs){
@@ -41,6 +41,34 @@ int main()
         exit(0);
     }
 
+    while (count <= 16){
+    //using while loop to store following info into txt file structure
+        ifs>>g.first;
+        ifs>>g.last;
+        ifs>>g.ssn;
+        ifs>>g.score.sc[0];
+        ifs>>g.score.sc[1];
+        ifs>>g.score.sc[2];
+        ifs>>g.score.sc[3];
+        ifs>>g.score.sc[4];
+        ifs>>g.score.grade;
 
+        ofs.write((char *) & g, sizeof(Grade));
+        //writing structure g into binary file
 
+        count++;
+    }
+
+    if(ofs.good()){
+        cout << "Records from grades.txt successfully written in grades.bin";
+    }
+
+    else{
+        cout <<"Error writing records in grades.bin";
+    }
+
+    ifs.close();
+    ofs.close();
+
+    return 0;
 }
