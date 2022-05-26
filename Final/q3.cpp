@@ -29,9 +29,18 @@ bool Subset(int numbers1[], int numbers2[], int x, int y)
     }
 }
 int main()
+//in main re-call the values & print result of whether they are a subset or not
 {
     const int SIZE1=5;
     const int SIZE2=10;
     int numbers1[SIZE1] = {2, 3, 5, 9, 10};
     int numbers2[SIZE2] = {1, 2, 3, 5, 9, 10, 11, 13, 15, 17};
+
+    if (Subset (numbers1, numbers2, SIZE1, SIZE2)){
+        cout << "The two arrays are a subset";
+    }
+    else{
+        cout << "The two arrays are not a subset";
+    }
+     return 0;
 }
