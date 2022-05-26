@@ -41,6 +41,8 @@ int main()
     //using if statement to test if avg value is over 80
     avg += num;
     //will assign # of students into avg who got over 80
+    
+    //will revise this part later to properly display it
 
      cout << "Number of students who averaged over 80: "
     << num;
