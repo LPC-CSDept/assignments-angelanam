@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 #include <fstream>
 //using this stream to write file
 
@@ -9,8 +10,8 @@ int prevNum = 51;
 
 int getRdnum (void){
 //using this int to start return of randomized #s between 1-50
-    return (rand()%50) + 1;
-    //adding 1 so it'll include 50
+    return rand()%51;
+    //making it 51 so it'll include 50
 }   
 
 int isGreater (int n){
@@ -28,10 +29,13 @@ int isGreater (int n){
         prevNum = n;
         return 0;
     }
+    return 1;
 }
 
 int main ()
 {
+    srand (time(0));
+    //randomizes all #s
     int N = 10;
     //making this equal 10 to call 10 #s
 
@@ -40,10 +44,10 @@ int main ()
     if(!ofs){
     //will display this if file can't open due to program error
         cout << "open file error" << endl;
-        return 1;
+        exit (0);
     }
 
-    for (int i=0; i<N; i++){
+    for (int i=0; i<10; i++){
     //iterates 10 times since it'll be 0-9
         int n = getRdnum();
         //generates the next random #
