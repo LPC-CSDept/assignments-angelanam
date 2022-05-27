@@ -7,6 +7,7 @@ using namespace std;
 int main()
 {
     ofstream ofs; 
+    //initiates write file as variable ofs
     int num, score1, score2; 
     string name;
     //program will ask to input for each variable 
