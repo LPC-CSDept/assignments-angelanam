@@ -1,12 +1,11 @@
 #include <iostream>
-#include <ctime>
 #include <fstream>
 //using this stream to write file
 
 using namespace std;
 
-int prevNum = 0;
-//making this variable equal 0 to keep previous value once entered
+int prevNum = 51;
+//making this variable equal 51 to keep values between 1-50
 
 int getRdnum (void){
 //using this int to start return of randomized #s between 1-50
@@ -19,20 +18,20 @@ int isGreater (int n){
     if (n > prevNum){
     //if value of n is greater than prevNum, it'll return to 1
     //returns & calls the value
+        prevNum = n;
         return 1;    
     }
 
     else{
     //if n is less than prevNum, returns to 0
     //will not call value
+        prevNum = n;
         return 0;
     }
 }
 
 int main ()
 {
-    srand(time(0));
-    //using random # generator seed
     int N = 10;
     //making this equal 10 to call 10 #s
 
@@ -44,20 +43,18 @@ int main ()
         return 1;
     }
 
-    prevNum = getRdnum();
-    //generates first random # & stores it in prevNum
     for (int i=0; i<N; i++){
     //iterates 10 times since it'll be 0-9
         int n = getRdnum();
         //generates the next random #
+        cout << n << " ";
+        //prints value
+        if (isGreater(n))
         ofs << n << " ";
         //writes & prints value to the file
-        prevNum = n;
-        //sets n as new previous #
     }   
     ofs.close();
     return 0;
-    
 }
 
 
