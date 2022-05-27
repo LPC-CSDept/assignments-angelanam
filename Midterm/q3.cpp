@@ -43,7 +43,16 @@ int main ()
         cout << "open file error" << endl;
         return 1;
     }
-    
+
+    prevNum = getRdnum();
+    //generates first random # & stores it in prevNum
+    for (int i=0; i<N; i++){
+    //iterates 10 times since it'll be 0-9
+        int n = getRdnum();
+        //generates the next random #
+        ofs << n << " ";
+        //writes & prints value to the file
+    }
 }
 
 
