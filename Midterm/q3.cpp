@@ -52,10 +52,10 @@ int main ()
         int n = getRdnum();
         //generates the next random #
         cout << n << " ";
-        //prints value
+        //prints all values on terminal
         if (isGreater(n))
         ofs << n << " ";
-        //writes & prints value to the file
+        //writes & prints requested values to file
     }   
     ofs.close();
     return 0;
