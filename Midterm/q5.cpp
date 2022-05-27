@@ -11,7 +11,7 @@ void getInput (int *num1, int *num2)
     cin >> *num1;
     cout << "Enter second number: ";
     cin >> *num2;
-    //using asterisks for variables 
+    //using asterisks to assign variables as pointers (towards getInput)
 }
 
 void isSame (int num1, int num2)
