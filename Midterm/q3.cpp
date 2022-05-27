@@ -27,7 +27,23 @@ int isGreater (int n){
     //will not call value
         return 0;
     }
+}
 
+int main ()
+{
+    srand(time(0));
+    //using random # generator seed
+    int N = 10;
+    //making this equal 10 to call 10 #s
+
+    ofstream ofs("numbers.txt");
+    //will open numbers.txt file in write mode
+    if(!ofs){
+    //will display this if file can't open due to program error
+        cout << "open file error" << endl;
+        return 1;
+    }
+    
 }
 
 
