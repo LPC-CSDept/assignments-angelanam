@@ -52,7 +52,12 @@ int main ()
         //generates the next random #
         ofs << n << " ";
         //writes & prints value to the file
-    }
+        prevNum = n;
+        //sets n as new previous #
+    }   
+    ofs.close();
+    return 0;
+    
 }
 
 
