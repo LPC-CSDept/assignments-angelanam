@@ -42,3 +42,23 @@ int intDivision (int n1, int n2)
     }
 }
 
+void fileWrite (int num1)
+//this function will open numbers.txt in write mode & store values
+{
+    ofstream ofs("numbers.txt");
+    ofs << num1;
+    ofs.close();
+}
+
+int main ()
+//re-calls all variables & functions to print program output
+{
+    int n1, n2; //declaring the two variables
+    getInput (&n1, &n2); //calls function to pass address of two variables
+    isSame (n1, n2); //calls function to pass value of two variables
+    int result = intDivision (n1, n2); //calls function to pass value 
+    //& store the return value in int result
+    cout << result; //prints value of result
+    fileWrite (result); //calls function to write data on the file
+}
+
